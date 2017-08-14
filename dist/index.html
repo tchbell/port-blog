@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ted Bell</title>
     <meta charset="UTF-8">
+    <title>Ted Bell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Welcome font mabye keep -->
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
+    <script src="https://use.fontawesome.com/8c10bed6cd.js"></script>
+    
 </head>
 <body>
-    <h1>Portfolio</h1>
-</body>
+    <div class="container-fluid">
+        <section class="welcome section">
+            <header>
+                <nav class="nav page-nav">
+                    <div class="container-fluid">
+                        <div class="navbar-brand page-nav__logo">TB</div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="page-nav__li">
+                                <a href="#portfolio" class="page-nav__item">Portfolio</a>
+                            </li>
+                            <li class="page-nav__li">
+                                <a href="#" class="page-nav__item">Resume</a>
+                            </li>
+                            <li class="page-nav__li">
+                                <a href="#contact" class="page-nav__item">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="welcome__title">Hello, I'm Ted.<br> I'm a front-end developer.</div>
+        </section>
+        <div class="container">
+            <section class="portfolio section" id="portfolio">
+            <h2 class="portfolio__title">Portfolio</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://blocitoff-tchbell.herokuapp.com/" target="_blank"><img class="portfolio-item__image img-responsive" src="/images/blocioff.jpg" alt="Blocitoff thumbnail"></a>
+                    </div>
+                    <div class="portfolio-item__description col-md-6">
+                        <h4>Blocitoff</h4>
+                        <p>Blocitoff is a to-do list that uses Firebase API and AngularJS to create tasks with an expiration date.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-item__description col-md-6">
+                        <h4>Bloctime</h4>
+                        <p>Bloctime uses Firebase and AngularJS to provide a Pomodoro time management application</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://bloctime-tchbell.herokuapp.com/" target="_blank"><img class="portfolio-item__image img-responsive" src="/images/bloctime.jpg" alt = "Blotime thumbnail"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://cjr4.netlify.com/" target="_blank"><img class="portfolio-item__image img-responsive" src="/images/Kill-River-lg.jpg"></a>
+                    </div>
+                    <div class="portfolio-item__description col-md-6">
+                        <h4>CJR Books</h4>
+                        <p>CJR Books uses AngularJS and Bootstrap to showase an authors books</p>
+                    </div>
+                </div>
+            </section>
+        </div>    
+
+        <section class="contact section" id="contact">
+        <h2 class="contact-title">Contact</h2>
+            <ul class="footer-list">
+                <li class="footer-item"><a href="https://www.linkedin.com/in/ted-bell-84285767/" target="_blank"><img src="images/linked_in%20_logo.png"></a></li>
+                <li class="footer-item"><a href="https://github.com/tchbell" target="_blank"><img src="images/github_logo.png" ></a></li>
+                <li class="footer-item"></li>
+            </ul>
+            <div><span class='glyphicon glyphicon-envelope mail-icon'></span>Email: Tchbell@gmail.com</div>
+        </section>
+
+        <footer class="page-footer">
+            <div class="footer-tagline"> Created by Ted Bell</div>
+        </footer>
+        </div>
+    </body>
 </html> 

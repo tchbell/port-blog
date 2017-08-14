@@ -1,0 +1,21 @@
+.welcome{
+    background-image:url("/images/mosaic-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    color:white;
+    height:640px;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.welcome__title{
+    font-size: 4em;
+    text-align:center;
+    text-shadow: 2px 2px 2px #000;
+    position: absolute;
+    top: 50%;
+    left:42%;
+    transform: translate(-35%, -50%);
+}
+

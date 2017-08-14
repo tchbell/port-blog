@@ -1,8 +1,16 @@
-.test{
-    font-size:1em;
-    display:flex;
-}
+//
+//-- Main SCSS file
 
-.anotherTest{
-    color:white;
-}
+  
+
+//Load structure
+@import 'structure/header';
+@import 'structure/sections';
+@import 'structure/footer';
+
+//Load pages
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/header';
+@import 'pages/portfolio';
+@import 'pages/welcome';
