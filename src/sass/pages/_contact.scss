@@ -1,5 +1,5 @@
 .contact{
-    height:400px;
+    height:22em;
     text-align:center;
     margin: 2em 0;
     padding-top:1em;
@@ -7,14 +7,33 @@
     background-attachment: fixed;
     background-position: center;
     background-size:cover;
-    position:relative;
 }
 .contact-title{
     margin-bottom: 1em;
+    font-family:$heading-font;
+    font-weight:bold;
+}
+
+.contact__email{
+    font-family:$body-font;
+    font-size:1.3em;
 }
 
 .mail-icon{
     margin-right:5px;
-    font-size:1.5em;
     margin-left:2em;
+}
+
+.footer-list{
+    text-align:center;
+    padding:0;
+}
+.footer-item{
+    display:inline-block;
+}
+
+.footer-tagline{
+    text-align:center;
+    padding-top:1em;
+    font-family:$body-font;
 }

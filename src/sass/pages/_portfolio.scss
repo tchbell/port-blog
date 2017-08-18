@@ -5,12 +5,34 @@
 .portfolio__title{
     text-align:center;
     margin-bottom: 2em;
+    font-family:$heading-font;
+    font-weight:bold;
+}
+
+.portfolio-heading{
+    font-family:$heading-font;
+    font-weight:bold;
 }
 
 .portfolio-item__description{
     margin-bottom: 10px;
+    font-family:$body-font;
+    font-size:1.3em;
+    
+    @media (max-width:991px){
+        display:none;
+    }
+    
+    
 }
 
 .portfolio-item__image{
     margin-bottom: 10px;
 }
+
+.portfolio-item__image:hover{
+    border:1px solid black;
+}
+
+
+
