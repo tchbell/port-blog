@@ -1,5 +1,6 @@
-.portfolio{
-    
+.portfolio-item{
+    border-bottom: 1px solid black;
+    padding: 3em 0;
 }
 
 .portfolio__title{
@@ -32,6 +33,10 @@
 
 .portfolio-item__image:hover{
     border:1px solid black;
+}
+
+.portfolio-item__no-border{
+    border-bottom: none;
 }
 
 

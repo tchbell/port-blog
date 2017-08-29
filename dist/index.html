@@ -25,11 +25,11 @@
 </head>
 <body>
     <div class="container-fluid">
-        <section class="welcome section">
+        <section class="welcome section" id="top">
             <header>
                 <nav class="nav page-nav">
                     <div class="container-fluid">
-                        <div class="navbar-brand page-nav__logo">TB</div>
+                        <div class="navbar-brand page-nav__logo"><a href="#top" class="logo">TB</a></div>
                         <button type="button" class="navbar-toggle page-nav__button" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -42,7 +42,7 @@
                                 <a href="#portfolio" class="page-nav__item">Portfolio</a>
                             </li>
                             <li class="page-nav__li">
-                                <a href="#" class="page-nav__item">Resume</a>
+                                <a href="/pages/resume.html" class="page-nav__item">Resume</a>
                             </li>
                             <li class="page-nav__li">
                                 <a href="#contact" class="page-nav__item">Contact</a>
@@ -56,36 +56,82 @@
             
             
 
-            <div class="welcome__title">Hello, I'm Ted.<br> I'm a front-end developer.</div>
+            <div class="welcome__title"><span class="title-letter">H</span><span class="title-letter">e</span><span class="title-letter">l</span><span class="title-letter">l</span><span class="title-letter">o</span><span class="title-letter">,</span> <span class="title-letter">I</span><span class="title-letter">'</span><span class="title-letter">m</span> <span class="title-letter">T</span><span class="title-letter">e</span><span class="title-letter">d</span><span class="title-letter">.</span><br> <span class="title-letter">I</span><span class="title-letter">'</span><span class="title-letter">m</span> <span class="title-letter">a</span> <span class="title-letter">f</span><span class="title-letter">r</span><span class="title-letter">o</span><span class="title-letter">n</span><span class="title-letter">t</span><span class="title-letter">-</span><span class="title-letter">e</span><span class="title-letter">n</span><span class="title-letter">d</span> <span class="title-letter">d</span><span class="title-letter">e</span><span class="title-letter">v</span><span class="title-letter">e</span><span class="title-letter">l</span><span class="title-letter">o</span><span class="title-letter">p</span><span class="title-letter">e</span><span class="title-letter">r</span><span class="title-letter">.</span>
+            </div>
         </section>
+        
+<!--
+        <div class="container">
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Development Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>AngularJs</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                <h3>Tools</h3>
+                    <ul>
+                        <li>Git and Github</li>
+                        <li>Bootstrap</li>
+                        <li>Gulp</li>
+                        <li>Chrome DevTools</li>
+                        <li>Command Line</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        </div>
+-->
+        
+
+        
         <div class="container">
             <section class="portfolio section" id="portfolio">
             <h2 class="portfolio__title">Portfolio</h2>
-                <div class="row">
+                <div class="row portfolio-item">
                     <div class="col-md-6">
                         <a href="https://blocitoff-tchbell.herokuapp.com/" target="_blank"><img class="portfolio-item__image img-responsive" src="/images/blocioff.jpg" alt="Blocitoff thumbnail"></a>
                     </div>
                     <div class="portfolio-item__description col-md-6">
-                        <h3 class="portfolio-heading">Blocitoff</h3>
-                        <p>Blocitoff is a to-do list that uses Firebase API and AngularJS to create tasks with an expiration date.</p>
+                        <h3 class="portfolio-heading">Mark-it-off</h3>
+                        <p>Mark-it-off is a to-do list that uses Firebase API and AngularJS to create tasks with an expiration date. The styling of the website is using Google fonts, Font Awesome, and custom CSS.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row portfolio-item">
                     <div class="portfolio-item__description col-md-6">
-                        <h3 class="portfolio-heading">Bloctime</h3>
-                        <p>Bloctime uses Firebase and AngularJS to provide a Pomodoro time management application</p>
+                        <h3 class="portfolio-heading">Pomo Time</h3>
+                        <p>Pomo Time uses Firebase and AngularJS to provide a Pomodoro time management application. The application is styled using Bootstrap, Google Fonts, Font Awesome, and custom CSS.</p>
                     </div>
                     <div class="col-md-6">
                         <a href="https://bloctime-tchbell.herokuapp.com/" target="_blank"><img class="portfolio-item__image img-responsive" src="/images/bloctime.jpg" alt = "Blotime thumbnail"></a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row portfolio-item">
                     <div class="col-md-6">
                         <a href="https://cjr4.netlify.com/" target="_blank"><img class="portfolio-item__image img-responsive" src="/images/Kill-River-lg.jpg"></a>
                     </div>
                     <div class="portfolio-item__description col-md-6">
                         <h3 class="portfolio-heading">CJR Books</h3>
                         <p>CJR Books uses AngularJS and Bootstrap to showase an authors books</p>
+                    </div>
+                </div>
+                <div class="row portfolio-item portfolio-item__no-border">
+                    <div class="portfolio-item__description col-md-6">
+                        <h3 class="portfolio-heading">Track Jams</h3>
+                        <p>Track Jams is a streaming music player that uses AngularJs and Buzz audio library.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://bloc-jams-tchb.netlify.com/" target="_blank"><img class="portfolio-item__image img-responsive" src=/images/Bloc-jams.jpg alt = "Bloc Jams thumbnail"></a>
                     </div>
                 </div>
             </section>
@@ -110,5 +156,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
     </body>
 </html> 

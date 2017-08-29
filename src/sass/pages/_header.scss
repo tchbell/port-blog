@@ -10,6 +10,15 @@
     padding: 1.5em;
 }
 
+a.logo{
+    color:black;
+}
+a.logo:hover{
+    text-decoration:none;
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+}
+
 .page-nav__logo{
     font-family: 'Alex Brush', cursive;
     font-size:3.5em;
@@ -18,8 +27,14 @@
 
 .page-nav__logo:hover{
     transform:rotate(1turn);
-    color:white;
-    text-shadow: 1px 1px 1px #000;
+    
+}
+
+.page-nav__ul{
+    @media (max-width:767px){
+        background-color:white;
+        z-index: 1;
+    }
 }
 
 
